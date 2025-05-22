@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende sobre HTML, CSS y JavaScript - los lenguajes fundamentales para desarrollo web moderno">
+    <title>Lenguajes Web Modernos | HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icons.png" type="image/png">
+</head>
+
+<body>
+    <header class="modern-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/icons.png" alt="Logo Desarrollo Web">
+                <span>WebDev</span>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="Acerca de/acerca-de.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+                    <li><a href="Servicios/servicios.html"><i class="fas fa-code"></i> Servicios</a></li>
+                    <li><a href="Contactos/contactos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="hero-title">Domina los <span>Lenguajes Web</span> Esenciales</h1>
+            <p class="hero-subtitle">HTML, CSS y JavaScript - La tríada fundamental del desarrollo web moderno</p>
+        </section>
+
+        <section class="intro-section">
+            <div class="section-header">
+                <h2>¿Qué son los lenguajes de programación web?</h2>
+                <div class="divider"></div>
+            </div>
+            <p>
+                Los lenguajes de programación para desarrollo web son conjuntos de instrucciones que permiten crear sitios web, aplicaciones y servicios en línea. Son el puente entre las ideas humanas y lo que las máquinas pueden entender y ejecutar.
+            </p>
+
+            <div class="section-header">
+                <h2>¿Por qué son importantes?</h2>
+                <div class="divider"></div>
+            </div>
+            <p>
+                Transforman conceptos en experiencias digitales interactivas. Desde simples páginas hasta complejas aplicaciones web, estos lenguajes hacen posible la web dinámica que conocemos hoy.
+            </p>
+        </section>
+
+        <section class="languages-section">
+            <div class="section-header">
+                <h2>Los 3 Pilares del Desarrollo Web</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="languages-grid">
+                <article class="language-card">
+                    <div class="card-header">
+                        <img src="images/logo html.jpg" alt="HTML5 Logo">
+                        <h3>HTML5</h3>
+                    </div>
+                    <p>
+                        La estructura básica de toda página web. Define el contenido y significado semántico de cada elemento en tu sitio.
+                    </p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="card-button">
+                        <i class="fas fa-book-open"></i> Aprender HTML
+                    </a>
+                </article>
+                
+                <article class="language-card">
+                    <div class="card-header">
+                        <img src="images/CSS 3.png" alt="CSS3 Logo">
+                        <h3>CSS3</h3>
+                    </div>
+                    <p>
+                        Da vida y estilo a tus páginas. Controla el diseño, colores, animaciones y la respuesta a diferentes dispositivos.
+                    </p>
+                    <a href="https://www.w3.org/Style/CSS/Overview.en.html" class="card-button">
+                        <i class="fas fa-paint-brush"></i> Dominar CSS
+                    </a>
+                </article>
+                
+                <article class="language-card">
+                    <div class="card-header">
+                        <img src="images/javascript.jpg" alt="JavaScript Logo">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>
+                        Añade interactividad y lógica. Desde simples efectos hasta complejas aplicaciones de una sola página (SPA).
+                    </p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="card-button">
+                        <i class="fas fa-code"></i> Explorar JS
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="section-header">
+                <h2>¿Tienes preguntas?</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Déjanos tus comentarios o consultas</p>
+            </div>
+            
+            <form id="commentForm" class="modern-form">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment"><i class="fas fa-comment"></i> Mensaje:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                </button>
+            </form>
+            
+            <div id="commentsList" class="comments-container"></div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                   
+                    <h3>WebDev</h3>
+                    <p>Domina las tecnologías web del futuro</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="Acerca de/acerca-de.html">Acerca de</a></li>
+                        <li><a href="Servicios/servicios.html">Servicios</a></li>
+                        <li><a href="Contactos/contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/oscar.hurtadoalvarado" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> WebDev. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Actualizar año
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Sistema de comentarios
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+            
+            const commentElement = document.createElement('div');
+            commentElement.className = 'comment-card';
+            commentElement.innerHTML = `
+                <div class="comment-header">
+                    <h4>${name}</h4>
+                    <small>${email}</small>
+                </div>
+                <p>${comment}</p>
+                <div class="comment-footer">
+                    <small>${new Date().toLocaleString()}</small>
+                </div>
+            `;
+            
+            document.getElementById('commentsList').prepend(commentElement);
+            this.reset();
+            
+            // Mostrar notificación
+            alert('¡Gracias por tu comentario!');
+        });
+    </script>
+</body>
+</html>
